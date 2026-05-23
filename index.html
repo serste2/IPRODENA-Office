@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inula Agent Office</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="passwordGate" class="gate" aria-live="polite">
+      <section class="gate-panel">
+        <p class="eyebrow">i prodotti della Natura</p>
+        <h1>Inula Agent Office</h1>
+        <p class="gate-copy">
+          Sala operativa protetta per il mini-team Inula: margini, claim, packaging,
+          campagna PDB, ATA, B2B e prove di campo.
+        </p>
+        <form id="passwordForm" class="gate-form">
+          <label for="passwordInput">Password</label>
+          <div class="gate-row">
+            <input id="passwordInput" type="password" autocomplete="current-password" placeholder="Inserisci password" />
+            <button type="submit">Entra</button>
+          </div>
+          <p id="passwordError" class="error" role="alert"></p>
+        </form>
+      </section>
+    </div>
+
+    <main id="appShell" class="app-shell" hidden>
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Control room agricola</p>
+          <h1>Inula delle Grotte</h1>
+        </div>
+        <nav class="view-tabs" aria-label="Viste">
+          <button class="tab active" data-view="office">Ufficio</button>
+          <button class="tab" data-view="pipeline">Pipeline</button>
+          <button class="tab" data-view="warroom">War Room</button>
+        </nav>
+      </header>
+
+      <section id="officeView" class="view active-view">
+        <div class="office-layout">
+          <section class="office-scene" aria-label="Ufficio 2D con agenti cliccabili">
+            <div class="wall-board">
+              <span>PDB goal 42.000 EUR</span>
+              <span>ATA 30%</span>
+              <span>Net target 150k/anno</span>
+            </div>
+            <div class="map-table">
+              <strong>Mappa Trasubbie</strong>
+              <span>Task flow: Margine -> Claim -> Kit -> Pubblica</span>
+            </div>
+            <div class="lab-bench">Banco prove 7/14/30</div>
+            <div class="shelf">Tinware / box / card / QR</div>
+            <div class="ata-board">Dossier ATA</div>
+            <div id="agentLayer"></div>
+          </section>
+
+          <aside id="agentPanel" class="agent-panel" aria-live="polite"></aside>
+        </div>
+      </section>
+
+      <section id="pipelineView" class="view">
+        <div class="section-head">
+          <p class="eyebrow">Flow operativo</p>
+          <h2>Ogni idea deve passare i filtri giusti</h2>
+        </div>
+        <div id="pipelineBoard" class="pipeline-board"></div>
+      </section>
+
+      <section id="warroomView" class="view">
+        <div class="section-head">
+          <p class="eyebrow">Decisioni dure</p>
+          <h2>War Room</h2>
+        </div>
+        <div class="war-grid">
+          <article class="metric-card">
+            <span>Obiettivo PDB</span>
+            <strong>42.000 EUR</strong>
+            <p>Lancio pubblico e validazione, non motore unico del business.</p>
+          </article>
+          <article class="metric-card">
+            <span>Target netto annuo</span>
+            <strong>150.000 EUR</strong>
+            <p>Richiede B2B, refill, margini reali e capacita produttiva.</p>
+          </article>
+          <article class="metric-card">
+            <span>Gate obbligatori</span>
+            <strong>3</strong>
+            <p>Margine Cinghiale, Claim Guardiano, Kit & Fornitori.</p>
+          </article>
+          <article class="metric-card alert">
+            <span>Rischio maggiore</span>
+            <strong>Overbuild</strong>
+            <p>Non ordinare o promettere scala prima dei prototipi fisici.</p>
+          </article>
+        </div>
+        <div id="decisionLog" class="decision-log"></div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
