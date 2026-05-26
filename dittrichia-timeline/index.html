@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dittrichia viscosa Research Timeline | i prodotti della Natura</title>
+  <meta name="description" content="Timeline dinamica sulla ricerca relativa a Dittrichia viscosa / Inula viscosa: usi tradizionali, bioattività, estratti, biomassa secca, INORT e formulazioni sperimentali." />
+  <style>
+    :root {
+      --ink: #171429;
+      --muted: #625f75;
+      --paper: #fff8e9;
+      --card: rgba(255, 255, 255, 0.88);
+      --line: #24143f;
+      --indigo: #231153;
+      --mango: #ffbd29;
+      --magenta: #ec2f72;
+      --blue: #15a4d8;
+      --green: #3d7b3f;
+      --shadow: 0 18px 60px rgba(23, 20, 41, 0.16);
+      --radius: 28px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 12%, rgba(255, 189, 41, 0.35), transparent 25rem),
+        radial-gradient(circle at 92% 4%, rgba(236, 47, 114, 0.22), transparent 22rem),
+        linear-gradient(135deg, #fff8e9 0%, #f8efe2 48%, #efe7ff 100%);
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border: 2px solid rgba(23, 20, 41, 0.9);
+      border-radius: calc(var(--radius) + 8px);
+      padding: clamp(28px, 5vw, 56px);
+      background:
+        linear-gradient(90deg, rgba(255, 189, 41, 0.94), rgba(255, 248, 233, 0.92) 42%, rgba(21, 164, 216, 0.22)),
+        repeating-linear-gradient(-8deg, transparent 0 12px, rgba(23, 20, 41, 0.05) 12px 14px);
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -110px;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      border: 32px solid rgba(236, 47, 114, 0.78);
+      transform: rotate(-18deg);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      font-family: "Roboto Mono", "Courier New", monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--indigo);
+    }
+
+    h1 {
+      max-width: 920px;
+      margin: 0;
+      font-size: clamp(2.15rem, 7vw, 5.8rem);
+      line-height: 0.93;
+      letter-spacing: -0.07em;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      margin: 22px 0 0;
+      font-size: clamp(1rem, 2.4vw, 1.25rem);
+      line-height: 1.5;
+      font-weight: 620;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 2px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,0.65);
+      padding: 8px 13px;
+      font-size: 0.82rem;
+      font-weight: 780;
+      box-shadow: 4px 4px 0 rgba(23,20,41,0.16);
+    }
+
+    .controls {
+      margin: 24px 0 16px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .search {
+      width: 100%;
+      border: 2px solid var(--line);
+      border-radius: 20px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,0.9);
+      color: var(--ink);
+      font: inherit;
+      font-weight: 650;
+      box-shadow: 6px 6px 0 rgba(23,20,41,0.1);
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+
+    .filter-btn {
+      appearance: none;
+      border: 2px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 12px;
+      background: rgba(255,255,255,0.8);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 160ms ease, background 160ms ease;
+    }
+
+    .filter-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .filter-btn.active {
+      background: var(--indigo);
+      color: white;
+    }
+
+    .summary-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 20px 0 24px;
+    }
+
+    .stat {
+      border: 2px solid var(--line);
+      border-radius: 22px;
+      padding: 16px;
+      background: var(--card);
+      box-shadow: 6px 6px 0 rgba(23,20,41,0.1);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    .timeline-wrap {
+      position: relative;
+      margin-top: 22px;
+    }
+
+    .timeline-wrap::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 8px;
+      bottom: 8px;
+      width: 4px;
+      border-radius: 999px;
+      background: linear-gradient(var(--magenta), var(--mango), var(--blue), var(--green));
+      transform: translateX(-50%);
+    }
+
+    .timeline {
+      display: grid;
+      gap: 26px;
+    }
+
+    .entry {
+      position: relative;
+      width: calc(50% - 34px);
+      border: 2px solid var(--line);
+      border-radius: var(--radius);
+      padding: 20px;
+      background: var(--card);
+      box-shadow: var(--shadow), 8px 8px 0 rgba(23,20,41,0.1);
+    }
+
+    .entry:nth-child(odd) {
+      justify-self: start;
+    }
+
+    .entry:nth-child(even) {
+      justify-self: end;
+    }
+
+    .entry::before {
+      content: "";
+      position: absolute;
+      top: 25px;
+      width: 18px;
+      height: 18px;
+      border: 3px solid var(--line);
+      border-radius: 50%;
+      background: var(--mango);
+      box-shadow: 0 0 0 6px rgba(255, 248, 233, 0.95);
+    }
+
+    .entry:nth-child(odd)::before {
+      right: -47px;
+    }
+
+    .entry:nth-child(even)::before {
+      left: -47px;
+    }
+
+    .date-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .year {
+      display: inline-flex;
+      min-width: 90px;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--line);
+      border-radius: 999px;
+      padding: 7px 10px;
+      background: var(--mango);
+      font-family: "Roboto Mono", "Courier New", monospace;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .tag {
+      border-radius: 999px;
+      padding: 7px 10px;
+      color: white;
+      background: var(--indigo);
+      font-family: "Roboto Mono", "Courier New", monospace;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+    }
+
+    .tag.ethno { background: #7a3c93; }
+    .tag.taxonomy { background: #5f6168; }
+    .tag.bioactivity { background: #c93362; }
+    .tag.biostimulant { background: #1556a6; }
+    .tag.dry { background: #8b5c14; }
+    .tag.inort { background: #205f42; }
+    .tag.internal { background: #171429; }
+
+    .entry h2 {
+      margin: 0 0 10px;
+      font-size: 1.28rem;
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+    }
+
+    .entry p {
+      margin: 0;
+      color: #323045;
+      line-height: 1.47;
+      font-weight: 570;
+    }
+
+    .takeaway {
+      margin-top: 13px;
+      padding: 12px;
+      border-radius: 18px;
+      background: rgba(255, 189, 41, 0.24);
+      border: 1px solid rgba(23,20,41,0.22);
+      font-size: 0.92rem;
+    }
+
+    .source-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .source-link {
+      display: inline-flex;
+      align-items: center;
+      border: 2px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 10px;
+      background: white;
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 850;
+      box-shadow: 3px 3px 0 rgba(23,20,41,0.12);
+    }
+
+    .source-link:hover {
+      background: var(--mango);
+    }
+
+    .note {
+      margin-top: 32px;
+      border: 2px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px;
+      background:
+        linear-gradient(135deg, rgba(35,17,83,0.96), rgba(35,17,83,0.86)),
+        radial-gradient(circle at 100% 0%, rgba(236,47,114,0.3), transparent 18rem);
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .note h2 {
+      margin: 0 0 10px;
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+    }
+
+    .note p {
+      margin: 0;
+      line-height: 1.55;
+      color: rgba(255,255,255,0.88);
+      font-weight: 560;
+    }
+
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 720;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 820px) {
+      .controls {
+        grid-template-columns: 1fr;
+      }
+
+      .filters {
+        justify-content: flex-start;
+      }
+
+      .summary-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .timeline-wrap::before {
+        left: 18px;
+      }
+
+      .entry {
+        width: calc(100% - 42px);
+        justify-self: end !important;
+      }
+
+      .entry::before {
+        left: -38px !important;
+        right: auto !important;
+      }
+
+      .date-row {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        padding: 18px 12px 42px;
+      }
+
+      .hero {
+        padding: 24px;
+      }
+
+      .summary-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .entry {
+        padding: 16px;
+        border-radius: 22px;
+      }
+
+      .source-link {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">i prodotti della Natura · ricerca viva</p>
+      <h1 id="page-title">Dittrichia viscosa timeline</h1>
+      <p class="subtitle">
+        Una mappa dinamica sulla genealogia scientifica di <em>Dittrichia viscosa</em>, ancora spesso citata come <em>Inula viscosa</em>: usi tradizionali, bioattività, estratti, biomassa secca, preparati liquidi e protocolli sperimentali.
+      </p>
+      <div class="hero-meta" aria-label="Legenda sintetica">
+        <span class="pill">🌿 pianta mediterranea bioattiva</span>
+        <span class="pill">🧫 estratti e microrganismi</span>
+        <span class="pill">🔥 biomassa secca e suolo</span>
+        <span class="pill">⚠️ mappa di ricerca, non claim prodotto</span>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Controlli timeline">
+      <input id="search" class="search" type="search" placeholder="Cerca: INORT, secco, nematodi, Pythium, tradizionale..." />
+      <div id="filters" class="filters"></div>
+    </section>
+
+    <section class="summary-strip" aria-label="Sintesi">
+      <article class="stat">
+        <strong id="totalCount">0</strong>
+        <span>voci nella timeline</span>
+      </article>
+      <article class="stat">
+        <strong>2001</strong>
+        <span>primo nodo agronomico forte: polvere fogliare</span>
+      </article>
+      <article class="stat">
+        <strong>2019</strong>
+        <span>svolta verso biostimolazione liquida</span>
+      </article>
+      <article class="stat">
+        <strong>2026</strong>
+        <span>fase CIGNULA: secco dosato, testabile</span>
+      </article>
+    </section>
+
+    <section class="timeline-wrap">
+      <div id="timeline" class="timeline" aria-live="polite"></div>
+    </section>
+
+    <section class="note">
+      <h2>Linea prudente per CIGNULA</h2>
+      <p>
+        La letteratura sostiene la bioattività di <em>Dittrichia/Inula</em>, ma non rende automaticamente equivalenti estratti, macerati, fermentati e biomassa secca. Per questo CIGNULA può essere presentata come miscela secca dosata per preparazioni agronomiche guidate e raccolta di osservazioni, lasciando il liquido finito a una fase successiva di standardizzazione.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <span>Bozza viva per i prodotti della Natura.</span>
+      <span>Ultimo aggiornamento: maggio 2026.</span>
+    </footer>
+  </main>
+
+  <script>
+    const entries = [
+      {
+        year: "Trad.",
+        sort: 0,
+        category: "ethno",
+        label: "ethnobotany",
+        title: "Usi tradizionali e medicina mediterranea",
+        body: "Review recenti descrivono D. viscosa come pianta usata per generazioni in medicina tradizionale, con impieghi contro disturbi infiammatori, microbici, ferite e altre condizioni. Questo non è ancora agronomia, ma spiega perché la pianta sia stata osservata a lungo come risorsa bioattiva.",
+        takeaway: "Base narrativa: pianta nota, non invenzione recente.",
+        sources: [
+          { name: "Review 2024", url: "https://www.sciencedirect.com/science/article/pii/S2225411024000324" }
+        ]
+      },
+      {
+        year: "1973",
+        sort: 1973,
+        category: "taxonomy",
+        label: "taxonomy",
+        title: "Da Inula a Dittrichia",
+        body: "La specie oggi viene trattata come Dittrichia viscosa (L.) Greuter, ma gran parte della letteratura agronomica e farmacologica continua a usare Inula viscosa. Nella ricerca conviene cercare entrambi i nomi.",
+        takeaway: "Regola pratica: usare sempre la doppia chiave Dittrichia viscosa / Inula viscosa.",
+        sources: [
+          { name: "Taxonomy note", url: "https://en.wikipedia.org/wiki/Dittrichia_viscosa" }
+        ]
+      },
+      {
+        year: "2001",
+        sort: 2001,
+        category: "bioactivity dry",
+        label: "dry bioactivity",
+        title: "Polvere fogliare ed estratti: attività nematocida",
+        body: "Oka, Ben-Daniel e Cohen studiano polvere ed estratti di Inula viscosa contro nematodi. La polvere fogliare allo 0,1% riduce fortemente juveniles di Meloidogyne javanica in sabbia, mentre estratti organici mostrano attività più forte rispetto all’estratto acquoso.",
+        takeaway: "Nodo utile per il secco: la polvere fogliare non è materia inerte.",
+        sources: [
+          { name: "Bar-Ilan record", url: "https://cris.biu.ac.il/en/publications/nematicidal-activity-of-powder-and-extracts-of-inula-viscosa/" },
+          { name: "DOI", url: "https://doi.org/10.1163/156854101753625245" }
+        ]
+      },
+      {
+        year: "2004",
+        sort: 2004,
+        category: "bioactivity",
+        label: "plant disease",
+        title: "Estratti di Inula contro malattie delle piante",
+        body: "Wang, Ben-Daniel e Cohen pubblicano su Phytopathology un lavoro sugli estratti di Inula viscosa per il controllo di malattie vegetali. Il materiale viene raccolto, essiccato ed estratto con solventi organici.",
+        takeaway: "Prima dorsale agricola: estratto vegetale applicato a patologie delle piante.",
+        sources: [
+          { name: "APS Phytopathology", url: "https://apsjournals.apsnet.org/doi/10.1094/PHYTO.2004.94.10.1042" },
+          { name: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/18943791/" }
+        ]
+      },
+      {
+        year: "2006",
+        sort: 2006,
+        category: "bioactivity",
+        label: "grape disease",
+        title: "Peronospora della vite e Plasmopara viticola",
+        body: "Cohen e coautori testano estratti fogliari di Inula viscosa contro la peronospora della vite causata da Plasmopara viticola. È uno dei passaggi più leggibili verso l’uso agricolo applicato.",
+        takeaway: "Collega la pianta a viticoltura, difesa e riduzione input.",
+        sources: [
+          { name: "APS Phytopathology", url: "https://apsjournals.apsnet.org/doi/10.1094/PHYTO-96-0417" },
+          { name: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/18943424/" }
+        ]
+      },
+      {
+        year: "2019",
+        sort: 2019,
+        category: "biostimulant",
+        label: "liquid biostimulant",
+        title: "Liquido di Inula per ornamentali e Aphis nerii",
+        body: "Prisa valuta un macerato liquido di Inula viscosa su Oscularia deltoides e Corpuscolaria lehmanii. I trattamenti riportano aumento di altezza, foglie, biomassa vegetativa e radicale, fioritura e possibile azione su Aphis nerii.",
+        takeaway: "Qui appare in modo esplicito la traiettoria biostimolante liquida.",
+        sources: [
+          { name: "Prisa 2019", url: "https://domenicoprisa.com/2019/12/27/article-possible-use-of-inula-viscosa-dittrichia-viscosa-l-for-biostimulation-of-oscularia-deltoides-and-corpuscolaria-lehmanii-plants-and-protection-against-aphis-nerii/" },
+          { name: "DOI", url: "https://doi.org/10.30574/gscbps.2019.9.3.0231" }
+        ]
+      },
+      {
+        year: "2020",
+        sort: 2020,
+        category: "biostimulant inort",
+        label: "INORT",
+        title: "Inula, alghe e microrganismi su spinacio e lattuga",
+        body: "Prisa testa gruppi con microrganismi, alghe, Inula viscosa e INORT, definito come mix di microrganismi + Inula viscosa + alghe. I risultati indicano incremento dei parametri agronomici e protezione da Pythium spp.",
+        takeaway: "INORT non è semplice Inula: è combinazione e processo.",
+        sources: [
+          { name: "ISROSET 2020", url: "https://www.isroset.org/journal/IJSRMS/full_paper_view.php?paper_id=2157" }
+        ]
+      },
+      {
+        year: "2021",
+        sort: 2021,
+        category: "dry",
+        label: "dry biomass",
+        title: "Biomassa secca di Dittrichia per weed management",
+        body: "Boari e coautori studiano biomassa secca macinata di D. viscosa incorporata nel suolo. A dosi elevate blocca l’emergenza delle piante, a dosi inferiori la ritarda. Il lavoro discute il potenziale della biomassa secca nella gestione integrata delle infestanti.",
+        takeaway: "Il secco è forma agronomica attiva, ma il dosaggio è critico.",
+        sources: [
+          { name: "Plants MDPI", url: "https://www.mdpi.com/2223-7747/10/1/147" },
+          { name: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/33445708/" }
+        ]
+      },
+      {
+        year: "2022",
+        sort: 2022.1,
+        category: "bioactivity",
+        label: "phytochemistry",
+        title: "Foglie come fonte di composti bioattivi",
+        body: "Mrid e coautori studiano le foglie di D. viscosa come fonte di composti bioattivi. Il lavoro rafforza la lettura della pianta come serbatoio di metaboliti e attività biologiche, con differenze tra estratti acquosi e metanolici.",
+        takeaway: "Serve sempre distinguere materiale vegetale, solvente, dose e metodo.",
+        sources: [
+          { name: "PMC 2022", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9000642/" }
+        ]
+      },
+      {
+        year: "2022",
+        sort: 2022.2,
+        category: "inort biostimulant",
+        label: "INORT",
+        title: "INORT su Amaranthus hypochondriacus",
+        body: "Prisa e Attanasio pubblicano un test su INORT, derivato dalla fermentazione di Inula viscosa, per germinazione e crescita di Amaranthus hypochondriacus. Il lavoro riporta aumento di crescita, biomassa radicale e vegetativa, riduzione della mortalità e incremento della biomassa microbica.",
+        takeaway: "Punto chiave: la trasformazione microbica può rovesciare l’effetto inibitorio dell’Inula.",
+        sources: [
+          { name: "WJARR 2022", url: "https://wjarr.com/content/biostimulant-derived-fermentation-inula-viscosa-inort-germination-and-growth-amaranthus" },
+          { name: "DOI", url: "https://doi.org/10.30574/wjarr.2022.16.1.0986" }
+        ]
+      },
+      {
+        year: "2024",
+        sort: 2024,
+        category: "ethno bioactivity",
+        label: "review",
+        title: "Review su etnomedicina, fitochimica e farmacologia",
+        body: "Una review del 2024 ricompone usi etnomedicinali, fitochimica, tossicologia e attività farmacologiche di D. viscosa. Riporta composti come sesquiterpeni, monoterpeni, flavonoidi e acidi fenolici.",
+        takeaway: "Serve come cornice bibliografica generale, non come prova diretta per CIGNULA.",
+        sources: [
+          { name: "ScienceDirect review", url: "https://www.sciencedirect.com/science/article/pii/S2225411024000324" }
+        ]
+      },
+      {
+        year: "2025",
+        sort: 2025,
+        category: "biostimulant dry",
+        label: "fresh/dry leaves",
+        title: "Foglie fresche, secche, tisana e macerato su brassiche",
+        body: "Prisa, Attanasio e Jamal valutano un biostimolante da Inula viscosa su cavoletti di Bruxelles e broccolo di Verona. I gruppi includono foglie fresche, foglie secche, tisana di foglie secche e macerato, sempre con microrganismi e alghe.",
+        takeaway: "È il nodo più vicino alla tua domanda: il secco entra nella ricerca biostimolante.",
+        sources: [
+          { name: "ResearchGate record", url: "https://www.researchgate.net/publication/394425524_Inula_viscosa_A_biostimulant_for_enhancing_vegetable_growth" },
+          { name: "DOI", url: "https://doi.org/10.31893/multiscience.2026057" }
+        ]
+      },
+      {
+        year: "2026",
+        sort: 2026,
+        category: "internal dry",
+        label: "CIGNULA R&D",
+        title: "CIGNULA: miscela secca dosata, attivabile in acqua",
+        body: "La direzione prudente per Inula delle Grotte è una miscela secca dosata di Dittrichia/Inula e Cistus, da attivare in acqua secondo protocollo e da osservare in test guidati. Non viene presentata come equivalente secco di INORT, ma come percorso autonomo di campo.",
+        takeaway: "Posizionamento pulito: secco sperimentale, protocollo proprio, validazione progressiva.",
+        sources: [
+          { name: "i prodotti della Natura", url: "https://iprodottidellanatura.com/" }
+        ]
+      }
+    ];
+
+    const categoryLabels = {
+      all: "Tutto",
+      ethno: "Tradizione / review",
+      taxonomy: "Nomi",
+      bioactivity: "Bioattività",
+      biostimulant: "Biostimolanti",
+      dry: "Secco / biomassa",
+      inort: "INORT",
+      internal: "CIGNULA"
+    };
+
+    const state = {
+      filter: "all",
+      query: ""
+    };
+
+    const timeline = document.getElementById("timeline");
+    const filters = document.getElementById("filters");
+    const search = document.getElementById("search");
+    const totalCount = document.getElementById("totalCount");
+
+    function categorySet() {
+      const set = new Set(["all"]);
+      entries.forEach(entry => entry.category.split(" ").forEach(cat => set.add(cat)));
+      return Array.from(set);
+    }
+
+    function buildFilters() {
+      filters.innerHTML = "";
+      categorySet().forEach(cat => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "filter-btn" + (state.filter === cat ? " active" : "");
+        btn.textContent = categoryLabels[cat] || cat;
+        btn.addEventListener("click", () => {
+          state.filter = cat;
+          buildFilters();
+          render();
+        });
+        filters.appendChild(btn);
+      });
+    }
+
+    function matches(entry) {
+      const inFilter = state.filter === "all" || entry.category.split(" ").includes(state.filter);
+      const q = state.query.trim().toLowerCase();
+      const searchable = [entry.year, entry.label, entry.title, entry.body, entry.takeaway, entry.category].join(" ").toLowerCase();
+      return inFilter && (!q || searchable.includes(q));
+    }
+
+    function render() {
+      const visible = entries
+        .slice()
+        .sort((a, b) => a.sort - b.sort)
+        .filter(matches);
+
+      totalCount.textContent = visible.length;
+      timeline.innerHTML = "";
+
+      visible.forEach(entry => {
+        const article = document.createElement("article");
+        article.className = "entry";
+        article.dataset.category = entry.category;
+
+        const sourceLinks = entry.sources.map(source => `
+          <a class="source-link" href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name} ↗</a>
+        `).join("");
+
+        const tagClass = entry.category.split(" ")[0] || "";
+        article.innerHTML = `
+          <div class="date-row">
+            <span class="year">${entry.year}</span>
+            <span class="tag ${tagClass}">${entry.label}</span>
+          </div>
+          <h2>${entry.title}</h2>
+          <p>${entry.body}</p>
+          <div class="takeaway"><strong>Uso per noi:</strong> ${entry.takeaway}</div>
+          <div class="source-row">${sourceLinks}</div>
+        `;
+
+        timeline.appendChild(article);
+      });
+
+      if (!visible.length) {
+        const empty = document.createElement("article");
+        empty.className = "entry";
+        empty.style.width = "100%";
+        empty.innerHTML = "<h2>Nessun risultato</h2><p>Prova a cambiare filtro o parola chiave.</p>";
+        timeline.appendChild(empty);
+      }
+    }
+
+    search.addEventListener("input", event => {
+      state.query = event.target.value;
+      render();
+    });
+
+    buildFilters();
+    render();
+  </script>
+</body>
+</html>
