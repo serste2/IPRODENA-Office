@@ -20,7 +20,7 @@
 <div class="brand">Inula delle Grotte · i prodotti della Natura</div>
 <h1 class="title">Open research <span>to field kits</span></h1>
 <p class="subtitle">Public research sources used to develop a farm-led line of regenerative kits: biomass recovery, dry mixes, macerates, microbial processes, soil cycles and practical tools for growers.</p>
-<div class="chips"><span class="chip red">#iononbrucio</span><span class="chip yellow">CIGNULA</span><span class="chip">INBRUMA Aulivi</span><span class="chip">Radical Restorer</span><span class="chip">ATA campaign</span></div>
+<div class="chips"><span class="chip red">#iononbrucio</span><span class="chip yellow">CIGNULA</span><span class="chip">INBRUMA Aulivi</span><span class="chip">Radical Restorer</span><span class="chip">Associazione di Tutela Ambientale (Environmental Protection Association)</span></div>
 </div>
 <div class="hero-band">
 <div class="pitch"><h2>From research to launch</h2><p>The line starts from a simple operational problem: agricultural biomass is often treated as waste or fire risk. Inula delle Grotte turns public plant research and local field work into kits that help redirect biomass, soil care and observation into a regenerative practice.</p></div>
@@ -29,7 +29,7 @@
 </section>
 <section class="controls"><input id="q" class="search" placeholder="Search: biomass, macerate, dry leaves, soil, microbes..." /><div id="filters" class="filters"></div></section>
 <section id="list" class="sources"></section>
-<section class="launch"><h2>ATA and #iononbrucio</h2><p>The public launch connects the product line to a local environmental action: reducing open-fire biomass management, creating a practical collection pathway for healthy olive prunings, and supporting the work of ATA for the Trasubbie and Trasubbino area.</p></section>
+<section class="launch"><h2>Associazione di Tutela Ambientale (Environmental Protection Association) and #iononbrucio</h2><p>The public launch connects the product line to a local environmental action: reducing open-fire biomass management, creating a practical collection pathway for healthy olive prunings, and supporting the work of the Associazione di Tutela Ambientale (Environmental Protection Association) for the Trasubbie and Trasubbino area.</p></section>
 <footer class="footer"><span>Società Agricola Semplice i prodotti della Natura</span><span>Public bibliography · May 2026</span></footer>
 </main>
 <script>
@@ -45,7 +45,7 @@ const entries=[
 {y:'2022',cat:'bio',t:'Leaves as a source of bioactive compounds',b:'Research on Dittrichia viscosa leaves as a source of bioactive compounds strengthens the botanical foundation of the line: leaves, extraction method, preparation and timing matter.',l:[['PMC 2022','https://pmc.ncbi.nlm.nih.gov/articles/PMC9000642/']]},
 {y:'2022',cat:'macerate',t:'Fermented Inula preparation for germination and growth',b:'A public study on a fermented Inula viscosa preparation reports effects on germination, growth, root and vegetative biomass, mortality and microbial biomass. Transformation and microbial activity are part of the research pathway.',l:[['WJARR 2022','https://wjarr.com/content/biostimulant-derived-fermentation-inula-viscosa-inort-germination-and-growth-amaranthus'],['DOI','https://doi.org/10.30574/wjarr.2022.16.1.0986']]},
 {y:'2025',cat:'macerate',t:'Fresh leaves, dry leaves, infusion and macerate on brassicas',b:'Recent biostimulant research includes fresh leaves, dry leaves, dry-leaf infusion and macerate on vegetable crops with microbial and algal components. This directly informs the passage from biomass to practical kit formats.',l:[['ResearchGate record','https://www.researchgate.net/publication/394425524_Inula_viscosa_A_biostimulant_for_enhancing_vegetable_growth'],['DOI','https://doi.org/10.31893/multiscience.2026057']]},
-{y:'2026',cat:'biomass',t:'From open research to regenerative kits',b:'Inula delle Grotte brings this research path into a farm-led product line: CIGNULA dry mix, INBRUMA Aulivi, INBRUMA Boschiva and the Radical Restorer kit, connected to local biomass recovery, soil regeneration and the ATA campaign.',l:[['i prodotti della Natura','https://iprodottidellanatura.com/'],['INBRUMA','https://iprodottidellanatura.com/inbruma']]}
+{y:'2026',cat:'biomass',t:'From open research to regenerative kits',b:'Inula delle Grotte brings this research path into a farm-led product line: CIGNULA dry mix, INBRUMA Aulivi, INBRUMA Boschiva and the Radical Restorer kit, connected to local biomass recovery, soil regeneration and the Associazione di Tutela Ambientale (Environmental Protection Association) campaign.',l:[['i prodotti della Natura','https://iprodottidellanatura.com/'],['INBRUMA','https://iprodottidellanatura.com/inbruma']]}
 ];
 const labels={all:'All',review:'Background',bio:'Bioactivity',biomass:'Biomass / dry',macerate:'Macerates / microbes'};let filter='all',query='';const list=document.getElementById('list'),filters=document.getElementById('filters'),q=document.getElementById('q');
 function cats(){return ['all',...Array.from(new Set(entries.map(e=>e.cat)))]}function renderFilters(){filters.innerHTML='';cats().forEach(c=>{const b=document.createElement('button');b.className='btn'+(filter===c?' active':'');b.textContent=labels[c]||c;b.onclick=()=>{filter=c;renderFilters();render()};filters.appendChild(b)})}
