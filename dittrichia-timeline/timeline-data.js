@@ -8,7 +8,7 @@ window.TIMELINE_ENTRIES = [
   {
     year: "1973", sort: 1973, category: "taxonomy", label: "taxonomy",
     title: "From Inula to Dittrichia",
-    body: "The accepted scientific name is now Dittrichia viscosa (L.) Greuter, but a large part of the agronomic, phytochemical and pharmacological literature still uses Inula viscosa. Any serious bibliography needs to search both names.",
+    body: "The accepted scientific name is now Dittrichia viscosa (L.) Greuter, but a large part of the agronomic, phytochemical and pharmacological literature still uses Inula viscosa. A serious bibliography needs to search both names.",
     sources: [{ name: "Taxonomy note", url: "https://en.wikipedia.org/wiki/Dittrichia_viscosa" }]
   },
   {
@@ -23,7 +23,7 @@ window.TIMELINE_ENTRIES = [
   {
     year: "2004", sort: 2004, category: "bioactivity", label: "plant disease",
     title: "Inula extracts and plant disease control",
-    body: "Wang, Ben-Daniel and Cohen published a Phytopathology paper on extracts of Inula viscosa for controlling plant diseases. The material was collected, dried and extracted with organic solvents, showing an applied-agriculture direction before later biostimulant formulations.",
+    body: "Wang, Ben-Daniel and Cohen published a Phytopathology paper on extracts of Inula viscosa for controlling plant diseases. The material was collected, dried and extracted with organic solvents, showing an applied-agriculture direction before later biostimulant research.",
     sources: [
       { name: "APS Phytopathology", url: "https://apsjournals.apsnet.org/doi/10.1094/PHYTO.2004.94.10.1042" },
       { name: "PubMed", url: "https://pubmed.ncbi.nlm.nih.gov/18943791/" }
@@ -39,19 +39,13 @@ window.TIMELINE_ENTRIES = [
     ]
   },
   {
-    year: "2019", sort: 2019, category: "biostimulant", label: "liquid biostimulant",
+    year: "2019", sort: 2019, category: "biostimulant", label: "liquid preparation",
     title: "Liquid Inula preparation for ornamental plants",
     body: "Prisa evaluated a liquid Inula viscosa preparation on Oscularia deltoides and Corpuscolaria lehmanii. The reported results include increases in plant height, leaves, vegetative biomass, root biomass and flowering, together with observations on Aphis nerii.",
     sources: [
       { name: "Prisa 2019", url: "https://domenicoprisa.com/2019/12/27/article-possible-use-of-inula-viscosa-dittrichia-viscosa-l-for-biostimulation-of-oscularia-deltoides-and-corpuscolaria-lehmanii-plants-and-protection-against-aphis-nerii/" },
       { name: "DOI", url: "https://doi.org/10.30574/gscbps.2019.9.3.0231" }
     ]
-  },
-  {
-    year: "2020", sort: 2020, category: "biostimulant inort", label: "INORT",
-    title: "Inula, algae and microorganisms on spinach and lettuce",
-    body: "Prisa tested groups including microorganisms, algae, Inula viscosa and INORT, described as a mixture of microorganisms, Inula viscosa and algae. The results report improved agronomic parameters and effects on Pythium spp. under the experimental conditions.",
-    sources: [{ name: "ISROSET 2020", url: "https://www.isroset.org/journal/IJSRMS/full_paper_view.php?paper_id=2157" }]
   },
   {
     year: "2021", sort: 2021, category: "dry", label: "dry biomass",
@@ -69,15 +63,6 @@ window.TIMELINE_ENTRIES = [
     sources: [{ name: "PMC 2022", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9000642/" }]
   },
   {
-    year: "2022", sort: 2022.2, category: "inort biostimulant", label: "INORT",
-    title: "INORT on Amaranthus hypochondriacus",
-    body: "Prisa and Attanasio published a test on INORT, described as a biostimulant derived from the fermentation of Inula viscosa, for germination and growth of Amaranthus hypochondriacus. Reported effects include growth, root and vegetative biomass, mortality reduction and microbial biomass increase.",
-    sources: [
-      { name: "WJARR 2022", url: "https://wjarr.com/content/biostimulant-derived-fermentation-inula-viscosa-inort-germination-and-growth-amaranthus" },
-      { name: "DOI", url: "https://doi.org/10.30574/wjarr.2022.16.1.0986" }
-    ]
-  },
-  {
     year: "2024", sort: 2024, category: "ethno bioactivity", label: "review",
     title: "Ethnomedicine, phytochemistry and pharmacology review",
     body: "A 2024 review gathers ethnomedicinal uses, phytochemistry, pharmacology and toxicity references for Dittrichia viscosa. It reports chemical groups including sesquiterpenes, monoterpenes, flavonoids and phenolic acids.",
@@ -86,7 +71,7 @@ window.TIMELINE_ENTRIES = [
   {
     year: "2025", sort: 2025, category: "biostimulant dry", label: "fresh/dry leaves",
     title: "Fresh leaves, dry leaves, infusion and macerate on brassicas",
-    body: "Prisa, Attanasio and Jamal evaluated an Inula viscosa biostimulant approach on Brussels sprout and Broccolo di Verona. The experimental groups include fresh leaves, dry leaves, dry-leaf infusion and macerate, together with microorganisms and algae.",
+    body: "Recent biostimulant research on Inula viscosa has also included fresh leaves, dry leaves, dry-leaf infusion and macerate on vegetable crops, together with microbial and algal components. This suggests that material form and process are both central to the research pathway.",
     sources: [
       { name: "ResearchGate record", url: "https://www.researchgate.net/publication/394425524_Inula_viscosa_A_biostimulant_for_enhancing_vegetable_growth" },
       { name: "DOI", url: "https://doi.org/10.31893/multiscience.2026057" }
